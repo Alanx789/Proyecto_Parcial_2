@@ -3,7 +3,7 @@ const db = {FB}
 
 const createUser = async(req, res) => {
     try {
-        
+        console.log(req)
     } catch (error) {
         res.send(error)
     }
