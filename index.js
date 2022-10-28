@@ -9,7 +9,7 @@ const apiPort = process.env.API_PORT || 3003;
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors())
 app.use(bodyParser.json())
-app.use('/api', router)
+app.use(router)
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`) );
 
